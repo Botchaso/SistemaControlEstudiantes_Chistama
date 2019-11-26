@@ -15,5 +15,6 @@ namespace SistemaControlEstudiantes_Chistama
         {
             InitializeComponent();
         }
+        
     }
 }

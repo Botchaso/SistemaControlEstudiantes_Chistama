@@ -17,10 +17,10 @@ namespace Logica
     {
         OperacionesBD operacionesBD;
 
-        public DataTable CargarDatosBD(string procedimientoAlmacenado)
+        public DataTable CargarDatosBD(string procedimientoAlmacenado, string[] valoresParametros, params string[] parametros)
         {
             operacionesBD = new OperacionesBD();
-            return operacionesBD.CargarDatosBD(procedimientoAlmacenado);
+            return operacionesBD.CargarDatosBD(procedimientoAlmacenado, valoresParametros, parametros);
         }
 
         public int EscribirEnBd(string procedimientoAlmacenado, string[] valoresParametros, params string[] parametros)

@@ -29,7 +29,7 @@ namespace Datos
 
         // Las conexiones a la BD se harán mediante usings, que hace más fácil desechar el objeto usado
         // cuando finalice su tarea.
-        public DataTable CargarDatosBD(string procedimientoAlmacenado)
+        public DataTable CargarDatosBD(string procedimientoAlmacenado, string[] valoresParametros, params string[] parametros)
         {
 
             using (sqlConexion = new SqlConnection(cadenaConexion))
@@ -47,6 +47,17 @@ namespace Datos
                     // Ahora, abrimos la conexión a la BD y recuperamos los datos,
                     // que luego serán guardados en un DataTable y devueltos al programa.
                     sqlConexion.Open();
+
+                    // Los procedimientos pueden o no recibir parámetros, por lo que solamente los asignamos
+                    // si los pasamos.
+                    if (parametros.Length != 0 && parametros != null) 
+                    {
+                        for (int i = 0; i < parametros.Length; i++)
+                        {
+                            sqlConsulta.Parameters.AddWithValue(parametros[i], valoresParametros[i]);
+                        }
+
+                    }
 
                     lectorDatos = sqlConsulta.ExecuteReader();
 
@@ -73,14 +84,15 @@ namespace Datos
                     };
                     using (sqlConsulta)
                     {
+                        sqlConexion.Open();
                         for (int i = 0; i < parametros.Length; i++)
                         {
-                            sqlConsulta.Parameters.AddWithValue(valoresParametros[i], parametros[i]);
+                            sqlConsulta.Parameters.AddWithValue(parametros[i], valoresParametros[i]);
                         }
 
                         // Devolvemos el número de filas afectadas por el procedimiento almacenado
                         return sqlConsulta.ExecuteNonQuery();
-                        
+
 
                     }
 

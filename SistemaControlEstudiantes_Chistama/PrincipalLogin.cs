@@ -43,13 +43,18 @@ namespace SistemaControlEstudiantes_Chistama
 
                 if (logica_De_Bd.CargarDatosBD("SP_LoginDocente", valoresParametros, parametros).Rows.Count > 0)
                 {
-                    MessageBox.Show("Ya estás adentro :3");
+                    Hide();
+                    // Guardamos el nombre de usuario para mostrarlo en las siguientes pantallas
+                    Properties.Settings.Default.NombreUsuario = bmtxNombreUsuario.Text.Trim();
+                    PanelPrincipal frmPanelPrincipal = new PanelPrincipal();
+                    frmPanelPrincipal.Show();
                 }
                 else
                 {
                     MessageBox.Show("Asegúrate que tus datos estén correctos");
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("Por favor, ingresa tu usuario y contraseña");
             }

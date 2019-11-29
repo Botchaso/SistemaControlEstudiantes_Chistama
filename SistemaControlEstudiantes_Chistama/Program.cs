@@ -15,7 +15,7 @@ namespace SistemaControlEstudiantes_Chistama
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListarAlumnos());
+            Application.Run(new PrincipalLogin());
         }
     }
 }

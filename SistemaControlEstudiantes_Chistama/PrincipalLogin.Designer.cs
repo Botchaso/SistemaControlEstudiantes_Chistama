@@ -114,7 +114,7 @@
             this.bmtxContrasenia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bmtxContrasenia.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmtxContrasenia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bmtxContrasenia.isPassword = false;
+            this.bmtxContrasenia.isPassword = true;
             this.bmtxContrasenia.Location = new System.Drawing.Point(261, 401);
             this.bmtxContrasenia.Margin = new System.Windows.Forms.Padding(4);
             this.bmtxContrasenia.Name = "bmtxContrasenia";

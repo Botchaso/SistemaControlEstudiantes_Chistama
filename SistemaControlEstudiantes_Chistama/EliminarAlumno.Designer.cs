@@ -1,6 +1,6 @@
 ﻿namespace SistemaControlEstudiantes_Chistama
 {
-    partial class ListarAlumnos
+    partial class EliminarAlumno
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarAlumnos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarAlumno));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.bcdgDatosAlumnos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bibDarBajaAlumno = new Bunifu.Framework.UI.BunifuImageButton();
+            this.cbListaAlumnos = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bcdgDatosAlumnos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibDarBajaAlumno)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +48,8 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(155)))), ((int)(((byte)(255)))));
-            this.bunifuCards1.Controls.Add(this.bcdgDatosAlumnos);
+            this.bunifuCards1.Controls.Add(this.bibDarBajaAlumno);
+            this.bunifuCards1.Controls.Add(this.cbListaAlumnos);
             this.bunifuCards1.Controls.Add(this.label1);
             this.bunifuCards1.Controls.Add(this.panel1);
             this.bunifuCards1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -61,44 +61,42 @@
             this.bunifuCards1.Size = new System.Drawing.Size(936, 637);
             this.bunifuCards1.TabIndex = 0;
             // 
-            // bcdgDatosAlumnos
+            // bibDarBajaAlumno
             // 
-            this.bcdgDatosAlumnos.AllowUserToAddRows = false;
-            this.bcdgDatosAlumnos.AllowUserToDeleteRows = false;
-            this.bcdgDatosAlumnos.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bcdgDatosAlumnos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bcdgDatosAlumnos.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bcdgDatosAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bcdgDatosAlumnos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bcdgDatosAlumnos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bcdgDatosAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bcdgDatosAlumnos.DoubleBuffered = true;
-            this.bcdgDatosAlumnos.EnableHeadersVisualStyles = false;
-            this.bcdgDatosAlumnos.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bcdgDatosAlumnos.HeaderForeColor = System.Drawing.Color.White;
-            this.bcdgDatosAlumnos.Location = new System.Drawing.Point(35, 201);
-            this.bcdgDatosAlumnos.Name = "bcdgDatosAlumnos";
-            this.bcdgDatosAlumnos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bcdgDatosAlumnos.Size = new System.Drawing.Size(868, 287);
-            this.bcdgDatosAlumnos.TabIndex = 2;
+            this.bibDarBajaAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(53)))), ((int)(((byte)(74)))));
+            this.bibDarBajaAlumno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bibDarBajaAlumno.Image = ((System.Drawing.Image)(resources.GetObject("bibDarBajaAlumno.Image")));
+            this.bibDarBajaAlumno.ImageActive = null;
+            this.bibDarBajaAlumno.Location = new System.Drawing.Point(379, 361);
+            this.bibDarBajaAlumno.Name = "bibDarBajaAlumno";
+            this.bibDarBajaAlumno.Size = new System.Drawing.Size(212, 187);
+            this.bibDarBajaAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.bibDarBajaAlumno.TabIndex = 5;
+            this.bibDarBajaAlumno.TabStop = false;
+            this.bibDarBajaAlumno.Zoom = 10;
+            this.bibDarBajaAlumno.Click += new System.EventHandler(this.bibDarBajaAlumno_Click);
+            // 
+            // cbListaAlumnos
+            // 
+            this.cbListaAlumnos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbListaAlumnos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbListaAlumnos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbListaAlumnos.FormattingEnabled = true;
+            this.cbListaAlumnos.Location = new System.Drawing.Point(148, 221);
+            this.cbListaAlumnos.Name = "cbListaAlumnos";
+            this.cbListaAlumnos.Size = new System.Drawing.Size(657, 38);
+            this.cbListaAlumnos.TabIndex = 4;
+            this.cbListaAlumnos.SelectedIndexChanged += new System.EventHandler(this.cbListaAlumnos_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 151);
+            this.label1.Location = new System.Drawing.Point(34, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Estudiantes bajo mi cargo:";
+            this.label1.Size = new System.Drawing.Size(445, 30);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Seleccione el estudiante que desea eliminar:";
             // 
             // panel1
             // 
@@ -106,10 +104,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.btnVolver);
-            this.panel1.Location = new System.Drawing.Point(-1, 5);
+            this.panel1.Location = new System.Drawing.Point(0, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(936, 112);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // btnVolver
             // 
@@ -129,9 +127,9 @@
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this.bcdgDatosAlumnos;
+            this.bunifuElipse1.TargetControl = this.bibDarBajaAlumno;
             // 
-            // ListarAlumnos
+            // EliminarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,14 +140,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "ListarAlumnos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Listado de Mis Alumnos - Alumnia";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ListarAlumnos_FormClosing);
-            this.Load += new System.EventHandler(this.ListarAlumnos_Load);
+            this.Name = "EliminarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dar de baja - Alumnia";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EliminarAlumno_FormClosing);
+            this.Load += new System.EventHandler(this.EliminarAlumno_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bcdgDatosAlumnos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibDarBajaAlumno)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -160,8 +158,9 @@
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnVolver;
+        private Bunifu.Framework.UI.BunifuImageButton bibDarBajaAlumno;
+        private System.Windows.Forms.ComboBox cbListaAlumnos;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bcdgDatosAlumnos;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

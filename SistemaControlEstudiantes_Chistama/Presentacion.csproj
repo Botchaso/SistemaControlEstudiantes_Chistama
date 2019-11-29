@@ -60,6 +60,18 @@
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EditarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAlumno.Designer.cs">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAlumno.Designer.cs">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <EmbeddedResource Include="AgregarEstudiante.resx">
       <DependentUpon>AgregarEstudiante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarAlumno.resx">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAlumno.resx">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListarAlumnos.resx">
       <DependentUpon>ListarAlumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +119,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

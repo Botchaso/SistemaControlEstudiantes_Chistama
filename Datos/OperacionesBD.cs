@@ -17,7 +17,7 @@ namespace Datos
         IDataReader lectorDatos;
         DataTable tablaDatos;
 
-        string nombreBD = "SisAlumnia", nombreServidor = "VYRIL\\SQL_2014", usuario = "", contrasenia = "";
+        string nombreBD = "SisAlumnia", nombreServidor = "DESKTOP-CBGFIKV", usuario = "", contrasenia = "";
         string cadenaConexion;
 
         public OperacionesBD()

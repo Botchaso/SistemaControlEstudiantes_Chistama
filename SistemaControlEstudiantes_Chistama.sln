@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaControlEstudiantes_Chistama", "SistemaControlEstudiantes_Chistama\SistemaControlEstudiantes_Chistama.csproj", "{EB5B21B7-11A5-418F-9864-5A668A599D51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "SistemaControlEstudiantes_Chistama\Presentacion.csproj", "{EB5B21B7-11A5-418F-9864-5A668A599D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{F81D8583-085C-471B-B33D-15A1D8DB8297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{B2AD821C-3850-4318-8723-9F1FE05F0981}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EB5B21B7-11A5-418F-9864-5A668A599D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB5B21B7-11A5-418F-9864-5A668A599D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB5B21B7-11A5-418F-9864-5A668A599D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81D8583-085C-471B-B33D-15A1D8DB8297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81D8583-085C-471B-B33D-15A1D8DB8297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81D8583-085C-471B-B33D-15A1D8DB8297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81D8583-085C-471B-B33D-15A1D8DB8297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AD821C-3850-4318-8723-9F1FE05F0981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AD821C-3850-4318-8723-9F1FE05F0981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AD821C-3850-4318-8723-9F1FE05F0981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AD821C-3850-4318-8723-9F1FE05F0981}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

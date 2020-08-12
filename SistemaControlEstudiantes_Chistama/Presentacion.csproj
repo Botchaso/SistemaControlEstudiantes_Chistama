@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>alumnia.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\Botchaso\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -48,16 +51,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Principal.cs">
+    <Compile Include="AgregarEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <Compile Include="AgregarEstudiante.Designer.cs">
+      <DependentUpon>AgregarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAlumno.Designer.cs">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAlumno.Designer.cs">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarAlumnos.Designer.cs">
+      <DependentUpon>ListarAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelPrincipal.Designer.cs">
+      <DependentUpon>PanelPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalLogin.Designer.cs">
+      <DependentUpon>PrincipalLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <EmbeddedResource Include="AgregarEstudiante.resx">
+      <DependentUpon>AgregarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarAlumno.resx">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAlumno.resx">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarAlumnos.resx">
+      <DependentUpon>ListarAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelPrincipal.resx">
+      <DependentUpon>PanelPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalLogin.resx">
+      <DependentUpon>PrincipalLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +119,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,6 +129,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{b2ad821c-3850-4318-8723-9f1fe05f0981}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alumnia.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
